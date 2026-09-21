@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jaylene Pang</title>
+  <meta name="description" content="Personal website of Jaylene Pang.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Jaylene Pang</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Johor Bahru, Malaysia</p>
+      <h1>Hi, I'm Jaylene.<br>I build things that <em>work</em>.</h1>
+      <p class="lead">Welcome to my corner of the internet. Here you'll find a bit about me, what I'm working on, and how to get in touch.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <p>I'm Jaylene Pang. Replace this paragraph with a short story about who you are, what you do, and what you care about.</p>
+        <ul class="facts">
+          <li><span>Based in</span> Johor Bahru</li>
+          <li><span>Focus</span> Add your focus here</li>
+          <li><span>Currently</span> Add what you're up to</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Work</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>A short description of your first project and what you did on it.</p>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>A short description of your second project and the result it achieved.</p>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>A short description of your third project and what you learned.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want to work together or just say hello? Send me a message.</p>
+      <form class="form" id="contact-form">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="5" required></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Jaylene Pang. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
